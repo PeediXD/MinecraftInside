@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Rubik", sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150%;
+}
+.nav-links{
+       flex: 1;
+       text-align: right;
+}
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #6100e1;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 50%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #6100e1;
+    background: #fff;
+    transition: 0.5s;
+    color:black;
+}
+
+/*------------ABOUT SECTION-------------*/
+
+.sub-header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7)),url(images/ABOUT_BACKGROUND.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img {
+    width: 20%; /* or any % or px value */
+    height: auto; /* keeps aspect ratio */
+    display: block;
+    margin: unset; /* dont center it */
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.EXPLORE-BTN{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #6100e1;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.EXPLORE-BTN:hover{
+    border: 1px solid #6100e1;
+    background: #000;
+    transition: 0.5s;
+    color:white;
+}
+
+/*-------Contact Us Page-------*/
+
+.location{
+    width: 80;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 80%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #000;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+    color:#000;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color:#000
+}
+.SUBMIT-BTN{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #6100e1;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.SUBMIT-BTN:hover{
+    border: 1px solid #6100e1;
+    background: #000;
+    transition: 0.5s;
+    color:white;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*---------------FOOTER---------------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    color: #000;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    color: #000;
+}
+
+/* Footer icon individual colors */
+.icon-youtube {
+    color: #FF0000; /* Red */
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+}
+.icon-facebook {
+    color: #1877F2; /* Facebook Blue */
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+}
+.icon-discord {
+    color: #5865F2; /* Discord Blue */
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+}
+.icon-snapchat {
+    color: #FFFC00; /* Yellow */
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;    
+}
+.icon-instagram {
+    color: #E1306C; /* Pinkish */
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;    
+}
+.fa-star {
+    color: #6100e1;
+}
+.icon-youtube:hover {
+    color: #cc0000;
+}
+.icon-facebook:hover {
+    color: #0e5aa7;
+}
+.icon-discord:hover {
+    color: #404eed;
+}
+.icon-snapchat:hover {
+    color: #e2dc00;
+}
+.icon-instagram:hover {
+    color: #c2185b;
+}
+.icons i {
+    font-size: 28px;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+
+/*Plugins Content*/
+
+.plugins-content {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.plugins-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.download-btn {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: RoyalBlue;
+}
+
+.download-btn i {
+    margin-left: 10px;
+}
+
+.Plugins-subheader {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7)), url(images/ABOUT_BACKGROUND.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.plugins-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.plugins-content .download-btn {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
